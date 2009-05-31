@@ -1,0 +1,20 @@
+-*- markdown -*-
+
+## Description
+
+`django-composition` provides the abstract way to denormalize data from your models in simple declarative way through special generic model field called `CompositionField`.
+
+Most cases of data denormalization are pretty common so `django-composition` has several "short-cuts" fields that handles most of them.
+
+## Base concept
+
+
+## Short-cuts
+
+Here is the list of provided short-cut fields:
+
+ - `ForeignAttributeField`
+
+ - `ChildsAggregationField`
+ 
+ - `AtributesAggregationField`

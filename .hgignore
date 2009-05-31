@@ -1,0 +1,9 @@
+syntax: glob
+
+*.pyc
+local_settings.py
+*.kpf
+*.sqlite*
+MANIFEST
+dist/*
+build/*

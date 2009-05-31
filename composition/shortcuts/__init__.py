@@ -1,0 +1,3 @@
+from composition.shortcuts.foreign_attribute import ForeignAttributeField
+from composition.shortcuts.attributes_aggregation import AttributesAggregationField
+from composition.shortcuts.childs_aggregation import ChildsAggregationField
