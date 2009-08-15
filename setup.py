@@ -28,7 +28,8 @@ setup(
         "composition.tests"
     ],
 
-    description=get_description(),
+    description='`django-composition` provides the abstract way to denormalize data from your models in simple declarative way through special generic model field called `CompositionField`',
+    long_description=get_description(),
 
     classifiers=[
         "Framework :: Django",
