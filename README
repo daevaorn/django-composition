@@ -1,5 +1,3 @@
---- markdown ---
-
 ## Description
 
 `django-composition` provides the abstract way to denormalize data from your models in simple declarative way through special generic model field called `CompositionField`.
