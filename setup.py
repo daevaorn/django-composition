@@ -7,8 +7,8 @@ def get_description():
     return "".join(
         file(
             os.path.join(os.path.dirname(os.path.normpath(__file__)),
-            'README'
-        ), 'r').readlines()[1:] # strip markdown marker line
+            'README.md'
+        ), 'r').readlines()[1:]
     )
 
 setup(
