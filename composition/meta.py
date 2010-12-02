@@ -58,7 +58,7 @@ class CompositionMeta(object):
         setattr(model, self.update_method["name"], lambda instance: self._update_method(instance))
         setattr(model, "freeze_%s" % name, lambda instance: self._freeze_method(instance))
 
-    def togle_freeze(self):
+    def toggle_freeze(self):
         for t in self.trigger:
             t.freeze = not t.freeze
 
