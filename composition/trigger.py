@@ -1,4 +1,5 @@
 from django.db import models
+from django.core.exceptions import ObjectDoesNotExist
 from django.utils.itercompat import is_iterable
 
 class Trigger(object):
@@ -41,7 +42,14 @@ class Trigger(object):
         if self.freeze:
             return
 
-        objects = self.field_holder_getter(instance)
+        try:
+            objects = self.field_holder_getter(instance)
+        except ObjectDoesNotExist:
+            return
+
+        if not objects:
+            return
+
         if not is_iterable(objects):
             objects = [objects]
 
