@@ -81,3 +81,14 @@ class CompositionField(object):
 
     def introspect_class(self, cls):
         pass
+
+    def south_field_triple(self):
+        """
+        Returns a suitable description of this field for South.
+        """
+        # We'll just introspect the _actual_ field.
+        from south.modelsinspector import introspector
+        field_class = self._c_native.__class__.__module__ + "." + self._c_native.__class__.__name__
+        args, kwargs = introspector(self._c_native)
+        # That's our definition!
+        return (field_class, args, kwargs)
