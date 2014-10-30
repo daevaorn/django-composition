@@ -13,7 +13,7 @@ def get_description():
 
 setup(
     name="django-composition",
-    version="0.2",
+    version="0.2.1",
 
     license="New BSD License",
 
